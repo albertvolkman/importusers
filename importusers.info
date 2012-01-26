@@ -1,0 +1,13 @@
+name = "User Import"
+description = "Importing users from old temporary site"
+package = Development
+
+dependencies[] = migrate
+
+files[] = importusers.migrate.inc
+
+; TIP: to show the migrate user interface delete the ";" at the beginning of the next line
+dependencies[] = migrate_ui
+
+version = "7.x-1.0"
+core = 7.x
