@@ -37,11 +37,11 @@ class ImportUsersMigration extends Migration {
     // Mapped fields
     //
     $this->addSimpleMappings(array('name', 'created'));
-    $this->addFieldMapping('email', 'mail')
+    $this->addFieldMapping('mail', 'email')
       ->defaultValue('replace@me.com');
-    $this->addFieldMapping('first_name', 'firstname')
+    $this->addFieldMapping('field_firstname', 'first_name')
       ->defaultValue('');
-    $this->addFieldMapping('last_name', 'lastname')
+    $this->addFieldMapping('field_lastname', 'last_name')
       ->defaultValue('');
     $this->addFieldMapping('password')
       ->defaultValue('asdf');
